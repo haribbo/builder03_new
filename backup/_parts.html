@@ -1,0 +1,66 @@
+style="background:url('images/subpage_img/intro_img1.jpg')no-repeat center/cover;"
+
+<!-- footer -->
+<footer class="footer">
+  <div class="footer_inner">
+    <div class="privacy">
+      <a href="#" class="bold">개인정보처리방침</a>
+      <a href="#">이용약관</a>
+    </div>
+    <ul class="sns">
+      <a href="" class="sns_item">
+        <i class="xi-kakaotalk xi-2x"></i>
+      </a>
+      <a href="" class="sns_item">
+        <i class="xi-facebook-official xi-2x"></i>
+      </a>
+      <a href="" class="sns_item">
+        <i class="xi-blogger xi-2x"></i>
+      </a>
+    </ul>
+    <a href="" class="file_down">회사소개서 다운로드<i class="xi-arrow-bottom xi-1x"></i></a>
+  </div>
+  <p class="copy">Copyright (c) 2018 Copyright Holder All Rights Reserved.</p>
+</footer>
+<!-- footer end -->
+
+<!-- tabitem  -->
+<div class="tab_items_wrap">
+  <button class="tab_items_btn" data-view="tab_items"><span class="tab_name">선택하기</span></button>
+  <ul class="tab_items" id="tab_items">
+    <li class="tab_item active" data-tabcontent="b1" data-name="SNS마케팅">
+      <a href="">SNS마케팅</a>
+    </li>
+    <li class="tab_item" data-tabcontent="b2" data-name="블로그마케팅">
+      <a href="">블로그마케팅</a>
+    </li>
+    <li class="tab_item" data-tabcontent="b3" data-name="인플루언서">
+      <a href="">인플루언서</a>
+    </li>
+    <li class="tab_item" data-tabcontent="b4" data-name="TVCF광고">
+      <a href="">TVCF광고</a>
+    </li>
+    <li class="tab_item" data-tabcontent="b5" data-name="설문조사">
+      <a href="">설문조사</a>
+    </li>
+  </ul>
+</div>
+<!-- tabitem  -->
+
+<!-- 탭아이템즈 미디어쿼리 -->
+<style>
+  @media (max-width:500px) {
+    .tab_items_btn {display: block !important; margin-bottom:20px;}
+    .tab_items_btn {width: 100%; background: none; font-size: 18px; border:none; padding: 10px 30px; border-bottom: 1px solid var(--black-m); outline: none; cursor: pointer; position: relative;}
+    .tab_items_btn span {color:var(--black-m); font-size: 18px;}
+    .tab_items_btn:after {color: #cacaca; font-family: xeicon!important;display: inline-block; font-size: 2rem; speak: none; font-style: normal;font-weight: 400; font-variant: normal; text-transform: none;line-height: 1;-webkit-font-smoothing: antialiased; font-weight: 2rem; position: absolute; content: "\e942"; right:15px;}
+    .tab_items_btn.view:after {content:"\e945";}
+
+    .tab_items_wrap {position:relative;}
+    .tab_items {margin: 0; width: 100%; display: none; transition: 0.3s; padding-bottom: 15px;}
+    .tab_items .tab_item {line-height: 1.8; font-size: 20px; font-weight: 300; text-align: center; letter-spacing: 0.5px;  cursor: pointer; margin: 0 30px; display: block; margin-bottom: 14px;}
+    .tab_items .tab_item.active a {border-bottom: 3px solid var(--black-m);}
+    .tabContents {min-height: 1000px;}
+    .tab_items.view {display: block;}
+  }
+</style>

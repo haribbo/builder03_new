@@ -1,0 +1,68 @@
+/*
+@import url("css/_value.css"); // 공통 유틸 & 이펙트
+@import url("css/_media.css"); // 미디어쿼리
+@import url("_sub_page_basis.css"); // 모든 서브페이지 컴포넌트 ( 레이아웃 포함 )
+@import url("css/_sub_page.css"); // 모든 디테일 서브페이지 CSS
+ */
+
+@import url("css/_value.css");
+@import url("css/_header.css");
+@import url("css/_footer.css");
+@import url("css/_timeLine.css");
+@import url("css/_media.css");
+@import url("css/_sub_page.css");
+@import url("css/_board.css");
+
+/*공통사용*/
+.main_heading { margin-bottom: 54px; }
+.main_heading h2,.main_heading h3 {font-size: 34px; color:#1a1a1a; font-weight: bold; padding-bottom: 25px; border-bottom: 3px solid #1a1a1a; padding-right:30px; display: inline-block;}
+.main_heading p {  font-size: 20px; line-height: 1.4; color:#1a1a1a;font-weight: 500; max-width: 400px; margin: 0 auto; margin-top: 25px;}
+.main_heading.center {max-width: 1300px; margin: 0 auto;  margin-bottom: 70px; text-align: center;}
+.main_heading.center h2 {padding: 0 25px 25px 25px;}
+.btn_cover {display: block; text-align: right; max-width: 1300px; margin: 0 auto; padding: 0 30px;}
+.slide_btn {}
+.link_btn {  font-size: 16px; font-weight: 400; cursor: pointer}
+.link_btn i {margin-left:8px; display: inline-block;}
+.file_down {display: inline-block; padding: 10px 20px; border:3px solid var(--fff-m); color:var(--fff-m); cursor: pointer; font-size: 16px;}
+.file_down i {display: inline-block; padding: 0 8px;}
+.file_down:hover {border-color: var(--primary);  transition: 0.3s; color:var(--primary);}
+.file_down:hover i {border-color: var(--primary);}
+
+.sec1 {width: 100%; height: 650px; background: #333;}
+.sec1 .swiper-container { height: inherit;}
+.sec1_wide {padding-top:170px; width: 100%; max-width: 1300px;  margin: 0  auto;}
+.sec1_wide .desc {font-size: 20px; font-weight: bold; line-height: 1.8; color:#fff; max-width: 380px; margin-top: 55px; font-weight: 400;}
+.slide {height: inherit; width: 100%; height: 100%;}
+.big_heading {max-width:380px; margin-right:auto; text-align: center; color:#fff; max-width: }
+.big_heading h2{ font-size: 75px;font-weight: bold; line-height: 1; margin-bottom:25px; color:inherit; letter-spacing: -0.5px;}
+.big_heading p {font-size: 34px; color:inherit; letter-spacing: 0.5px;}
+/* 프로젝트리스트 */
+.sec2 { width: 100%; background: #f6f6f6; padding: 80px 0; }
+.sec2 .main_heading {margin-bottom: 0;}
+.sec2 .project_list {max-width: 1300px; margin: 0 auto;  padding-top: 68px;}
+.sec2 .project_list .list_item {height: 200px;}
+/* 트로피 */
+.sec3 { max-width: 1300px; padding: 80px 0 100px 0; margin: 0 auto;}
+.sec3 .btn_cover {padding-top:45px;}
+.main_icons {display: flex; justify-content: space-between; text-align: center; max-width: 1000px; margin: 0 auto;}
+.main_icons .main_icons_item {flex:1; max-width: 172px;}
+.main_icons .main_icons_item .icon_cover {display: inline-block;}
+.main_icons .main_icons_item .tit { font-size: 28px; line-height: 1.8; color:var(--black-m); margin-bottom: 8px;}
+.main_icons .main_icons_item .desc {font-size: 18px; line-height: 1.8; color: var(--black-m);}
+/* 컨택트 */
+.sec4 {height: auto;}
+.sec4 .btn_cover {text-align: center;}
+.sec4 .btn_cover a {display: inline-block; padding: 10px 25px; border:1px solid rgba(255,255,255,0.5); color:var(--fff-m); margin-top: 30px;}
+.sec4 .call_banner {height: inherit;} /*color:#1a1a1a;*/
+.call_banner { max-width: 1300px; padding: 55px 35px;font-size: 20px; margin: 0 auto; text-align: right;}
+.call_banner .call_banner_txt {line-height: 2.4; margin-top:0; padding: 0; font-weight: 400; width: 450px; margin:auto; text-align: center; color:var(--fff-m);}
+.call_banner .call_banner_txt i  {display: block; margin-bottom: 25px; color:inherit;}
+.call_banner .call_banner_txt strong {font-size: 25px; color:inherit;}
+.call_banner .call_banner_txt p {font-size: 20px; color:inherit;}
+.call_banner span.txt_point {color:var(--primary); font-weight: 500; font-size: inherit; }
+.call_banner .banner_br,.txt_br {display: block; font-size: inherit; font-weight:inherit; color:inherit}
+
+/*파트너스*/
+.sec5 {max-width: 1300px; margin: 0 auto; padding: 80px 30px;}
+.sec5 .swiper-container .swiper-slide img {width: 100%;}
+.sec5 .swiper-pagination-bullets{ padding-top:25px;}

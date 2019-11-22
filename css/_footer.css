@@ -1,0 +1,20 @@
+
+.footer {background: #222;padding: 35px 0px; position: relative;}
+.footer_inner {max-width: 1300px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap:wrap; position: relative; padding: 0 30px; min-height: 130px;}
+.footer .copy {width: 100%; font-size: 14px; text-align: center;margin-top:20px; color:#505050; letter-spacing:1px; text-transform: uppercase;; font-weight: 400;}
+.footer .privacy img {margin-right: 50px;}
+.footer .privacy {display: flex; align-items: center;}
+.footer .privacy img {line-height: 1;}
+.footer .privacy a {display: inline-block; color:#928e8e; letter-spacing: -0.5px; font-size: 18px; margin-right:20px; padding-right:20px; position: relative;}
+.footer .privacy a.bold { color:#a9a6a6; margin-right:17px; font-weight: 500;}
+.footer .privacy a:last-child {margin-right:0;}
+.footer .sitemap {overflow: hidden; position: absolute; left:50%;  top:0; transform: translateX(-50%); top:6px;}
+.footer .sitemap li {float: left;padding:  0 20px ;position: relative;}
+.footer .sitemap li:before,.footer .privacy a:before {content: ''; position: absolute; width: 1px; background: #eaeaea; right:0; top:25%; height: 50%; opacity: 0.15;}
+.footer .sitemap li:last-child:before,.footer .privacy a:last-child:before {display: none;}
+.footer .sitemap li a {color:#928e8e; letter-spacing: -0.5px; text-transform: uppercase; font-size: 17px;}
+.footer .sns .sns_item {padding: 10px; border: 1px solid rgba(0,0,0,0.2); background: #fff; border-radius:50%; display: inline-block; line-height: 10px; font-size: 10px; color:#222; opacity: 0.8;}
+.footer .sns .sns_item i {font-size: 1.5rem;}
+.footer .sns .sns_item:hover i { transition: 0.3s;}
+.footer .sns .sns_item:nth-child(2) {margin: 0 4px;}
+.footer .file_down {opacity: 0.8;}
