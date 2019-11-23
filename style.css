@@ -13,6 +13,9 @@
 @import url("css/_sub_page.css");
 @import url("css/_board.css");
 
+/* xi */
+.ft_xi{position: relative;}
+.ft_xi:before,.ft_xi:after {color: #fff; font-family: xeicon!important;display: inline-block; font-size: 2rem; speak: none; font-style: normal;font-weight: 400; font-variant: normal; text-transform: none;line-height: 1;-webkit-font-smoothing: antialiased; position: absolute; left:50%; top:50%; transform: translate(-50%,-50%);}
 /*공통사용*/
 .main_heading { margin-bottom: 54px; }
 .main_heading h2,.main_heading h3 {font-size: 34px; color:#1a1a1a; font-weight: bold; padding-bottom: 25px; border-bottom: 3px solid #1a1a1a; padding-right:30px; display: inline-block;}

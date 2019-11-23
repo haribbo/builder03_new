@@ -1,52 +1,33 @@
 $(document).ready(function() {
-  const menu_btn = $('.menu_btn')
-  const navlinks = $('header>nav>ul');
-  const links = $('header>nav>ul>li');
-  // left_menu
-  var left_menu = $('.fixed_menu');
-  var header = $('header.header');
-  var left_menu_height = $('.fixed_menu').innerHeight();
 
+const header = $('header');
+  var nav_mobile_btn = $('.nav_mobile_btn');
+  var nav = $('header nav > ul');
+
+  const links = $('header>nav>ul>li>a');
   function init() {
-    links.find('>a').removeAttr('href');
+    links.removeAttr('href');
 
   }
 
-  init();
-
-  menu_btn.click(function(event) {
-    event.preventDefault();
-    navlinks.toggleClass('open');
-    links.each(function(index, el) {
-      links.addClass('fade');
-    });
-  });
-
-  //drop_menu
-  const sub_mneu = $('.sub-menu');
-
-  links.mouseover(function(event) {
-    event.preventDefault();
-    var idx = links.index(this);
-    header.addClass('bg');
-    sub_mneu.removeClass('sub_menu_view');
-    sub_mneu.eq(idx).addClass('sub_menu_view');
+  nav_mobile_btn.click(function(event) {
+    console.log("클릭");
+    $(this).toggleClass('open');
+    links.css('pointer-events','none');
+    nav.toggleClass('view');
+    console.log("클릭ㅇㅇㅇ");
   });
 
 
   $(window).scroll(function() {
-    if (sub_mneu.hasClass('sub_menu_view') == true) {
-      sub_mneu.removeClass('sub_menu_view');
-    }
     var top = this.scrollY;
-    if (left_menu_height < top && left_menu.hasClass('fix_menu') == false) {
-      header.addClass('fix_menu');
+    if (header.hasClass('fixed') == false) {
+    header.addClass('fixed');
     } else if (top === 0) {
       console.log("작음");;
-      header.removeClass('fix_menu');
+      header.removeClass('fixed');
     }
   });
-
 
   // 공통 tabs tabContent
   const tabs = $('[data-tabcontent]');

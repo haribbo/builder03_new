@@ -2,9 +2,7 @@
 
 
 @media (max-width:1250px) {
-  header.header nav h1 {position: relative; left:30px;}
   .sec1_wide {padding: 170px 30px 0 30px;}
-
   .conts_heading.process{padding-left: 20px;}
   section.sub8_sec2 .sub8_sec2_inner .icon_list .icon_item {padding-bottom: 25px; margin-bottom: 30px;}
   section.sub8_sec2 .sub8_sec2_inner .icon_list .icon_item:after {margin-right:0; bottom:0; left:0; content:"\e942";}
@@ -14,24 +12,6 @@
 }
 
 @media (max-width:768px) {
-  header div.fixed_menu {opacity: 1;}
-  header.header nav ul{ position: fixed; flex-direction: column; height: 100vh; width: 100%; justify-content: space-around; padding: 20vh 0;   clip-path:circle(100px at 90% 10%);  -webkit-clip-path:circle(100px at 90% 10%); transition: all 0.5s ease-out; transition-timing-function: cubic-bezier(.39,.38,.3,1.17); pointer-events: none;  opacity: 0; background:#000;}
-  header.header nav>ul.open { clip-path:circle(1100px at 90% 10%);  -webkit-clip-path:circle(1300px at 90% 10%); pointer-events: all; opacity: 1;}
-  header.header nav>ul>li { opacity: 0; border-bottom: 3px solid #fff;}
-  header.header nav ul li:hover {border-color:var(--primary); }
-  header.header nav ul li:hover a {color: var(--primary);}
-  header.header nav ul li.fade {opacity: 1;}
-  header.header nav ul li a {}
-  /* mobile sub-manu */
-  header.header nav ul.sub-menu {display: none;}
-  header nav ul.sub-menu.sub_menu_view  {display: block;}
-
-  header nav ul.sub-menu.sub_menu_view {height: auto;}
-  header.header.fix_menu nav ul.sub-menu {margin-top:0 !important; position: relative; display: block;}
-  header.header nav ul.sub-menu {position: relative; margin-top:0; }
-  header.header nav ul.sub-menu li {display: inline-block; width:auto;}
-  header.header nav ul.sub-menu li:first-child  {margin-top:0;}
-  header.header nav ul.sub-menu li a {color:#fff;}
 
   /* 메인 */
   .sec1_wide {padding: 170px 0 0 0;}
